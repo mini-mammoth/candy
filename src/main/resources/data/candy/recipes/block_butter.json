@@ -1,0 +1,17 @@
+  
+{  
+  "type":"crafting_shaped",
+  "pattern":[  
+     "xxx",
+     "xxx",
+     "xxx"
+  ],
+  "key":{  
+     "x":{  
+        "item":"candy:item_butter"
+     }
+  },
+  "result":{  
+     "item":"candy:block_butter"
+  }
+}
