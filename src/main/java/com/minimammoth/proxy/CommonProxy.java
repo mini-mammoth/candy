@@ -3,6 +3,9 @@ package com.minimammoth.proxy;
 import com.minimammoth.Candy;
 import com.minimammoth.blocks.ButterBlock;
 import com.minimammoth.init.ModBlocks;
+import com.minimammoth.items.ButterItem;
+import com.minimammoth.items.CaramelItem;
+import com.minimammoth.items.PanItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
@@ -24,8 +27,10 @@ public class CommonProxy {
         LOGGER.info("HELLO from Register Items");
 
         registry.getRegistry().registerAll(
-                new Item((new Item.Properties()).group(ItemGroup.FOOD).food(Foods.BREAD)).setRegistryName(new ResourceLocation(Candy.MODID, "item_butter")),
-                new BlockItem(ModBlocks.BUTTER_BLOCK, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(Candy.MODID, "block_butter"))
+            new PanItem(),
+            new ButterItem(),
+            new CaramelItem(),
+            new BlockItem(ModBlocks.BUTTER_BLOCK, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(new ResourceLocation(Candy.MODID, "block_butter"))
         );
     }
 

@@ -1,0 +1,18 @@
+  
+{  
+  "type":"crafting_shapeless",
+  "ingredients":[
+      {
+         "item":"candy:item_pan"
+      },
+      {
+         "item":"candy:item_butter"
+      },
+      {
+         "item":"minecraft:sugar"
+      }
+   ],
+  "result":{  
+     "item":"candy:item_caramel"
+  }
+}
